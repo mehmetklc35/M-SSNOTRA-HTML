@@ -1,0 +1,112 @@
+/* ---------------Registration Page--------------- */
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Create An Account  */
+
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  padding: 0 1.5rem;
+}
+
+.login-section .login-form {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  width: 60rem;
+  padding: 3.5rem 5rem;
+}
+
+.login-section .login-form h2 {
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  text-align: center;
+  padding-bottom: 3.5rem;
+}
+
+.login-section .login-form form .login-form-control {
+  margin-bottom: 1.5rem;
+}
+
+.login-section .login-form form .login-form-control label {
+  display: block;
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  padding-bottom: 0.35rem;
+}
+
+.login-section .login-form form .login-form-control input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 2px solid #d8d8d8;
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.login-section .login-form form .forgot-password-link {
+  margin-top: 3.5rem;
+  text-align: center;
+}
+
+.login-section .login-form form .forgot-password-link a {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.login-section .login-form form .forgot-password-link a:hover {
+  text-decoration: underline;
+}
+
+.login-section .login-form form .login-btn {
+  width: 100%;
+  margin-top: 3.5rem;
+  text-align: center;
+}
+
+.login-section .login-form form .login-btn button {
+  width: 100%;
+  padding: 1.45rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: #fafafa;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 620px) {
+  .login-section .login-form {
+    width: 45rem;
+    padding: 3.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .login-section .login-form {
+    width: 100%;
+    padding: 3.5rem 1.5rem;
+  }
+
+  .login-section .login-form h2 {
+    font-size: 2.5rem;
+  }
+}

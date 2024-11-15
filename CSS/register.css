@@ -1,0 +1,120 @@
+/* ---------------Registration Page--------------- */
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Create An Account  */
+
+.register-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  padding: 0 1.5rem;
+}
+
+.register-section .register-form {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  width: 80rem;
+  padding: 3.5rem 5rem;
+}
+
+.register-section .register-form h2 {
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  text-align: center;
+  padding-bottom: 3.5rem;
+}
+
+.register-section .register-form form .register-form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.register-section .register-form form .register-form-control {
+  margin-bottom: 1.2rem;
+  width: 100%;
+}
+
+.register-section .register-form form .register-form-control:last-child {
+  margin-left: 1.5rem;
+}
+
+.register-section .register-form form .register-form-control label {
+  display: block;
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  padding-bottom: 0.35rem;
+}
+
+.register-section .register-form form .register-form-control input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 2px solid #d8d8d8;
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.register-section .register-form form .create-account-btn {
+  width: 100%;
+  margin-top: 3.5rem;
+  text-align: center;
+}
+
+.register-section .register-form form .create-account-btn button {
+  padding: 1.45rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: #fafafa;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 620px) {
+  .register-section .register-form {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .register-section .register-form {
+    width: 100%;
+    padding: 3.5rem 1.5rem;
+  }
+
+  .register-section .register-form h2 {
+    font-size: 2.5rem;
+  }
+
+  .register-section .register-form form .create-account-btn button {
+    width: 100%;
+  }
+
+  .register-section .register-form form .register-form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .register-section .register-form form .register-form-control:last-child {
+    margin-left: 0rem;
+  }
+}

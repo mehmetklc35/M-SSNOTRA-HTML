@@ -1,0 +1,305 @@
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navigation-display {
+  margin: 1.5rem 0rem;
+}
+
+.navigation-display .navigation-display-content .navigation-breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+
+.navigation-display
+  .navigation-display-content
+  .navigation-breadcrumbs
+  li:not(:first-child) {
+  margin-left: 1.2rem;
+}
+
+.navigation-display .navigation-display-content .navigation-breadcrumbs li a {
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  color: #282828;
+}
+
+.navigation-display
+  .navigation-display-content
+  .navigation-breadcrumbs
+  li
+  a:hover {
+  text-decoration: underline;
+}
+
+.navigation-display .navigation-display-content .navigation-breadcrumbs li {
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  color: #777;
+}
+
+.contact-page h2 {
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.85rem 2rem;
+  text-align: center;
+}
+
+.contact-us-section {
+  margin: 2.5rem 0rem;
+  padding: 0 2rem;
+}
+
+.contact-us-section .contact-us {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  width: 100%;
+  padding: 3.5rem;
+}
+
+.contact-us-section .contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-us-section .contact .contact-map iframe {
+  height: 400px;
+  width: 65rem;
+}
+
+.contact-us-section .contact .contact-type {
+  font-size: 1.8rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  padding-bottom: 0.35rem;
+}
+
+.contact-us-section .contact .contact-description {
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  margin-bottom: 0.85rem;
+}
+
+.contact-us-section .contact .contact-description span {
+  display: block;
+}
+
+.contact-us-section .contact ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.contact-us-section .contact ul li {
+  font-size: 2.5rem;
+}
+
+.contact-us-section .contact ul li:not(:last-child) {
+  margin-right: 2.5rem;
+}
+
+.contact-us-section .contact ul li #insta {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-us-section .contact ul li .fb {
+  color: #4267b2;
+}
+
+.contact-us-section .contact ul li .twitter {
+  color: #1da1f2;
+}
+
+.contact-us-section .contact ul li .pinterest {
+  color: #e60023;
+}
+
+.contact-us-section .contact-us .write-us-contact {
+  margin-top: 5rem;
+}
+
+.contact-us-section .contact-us .write-us-contact h3 {
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.contact-us-section .contact-us .write-us-contact form {
+  width: 80rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.contact-us-section .contact-us .write-us-contact form .write-us-form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-us-section
+  .contact-us
+  .write-us-contact
+  form
+  .write-us-form-group
+  .write-us-form-control {
+  margin-bottom: 1.2rem;
+  width: 100%;
+}
+
+.contact-us-section
+  .contact-us
+  .write-us-contact
+  form
+  .write-us-form-group
+  .write-us-form-control:last-child {
+  margin-left: 1.5rem;
+}
+
+.contact-us-section
+  .contact-us
+  .write-us-contact
+  form
+  .write-us-form-group
+  .write-us-form-control
+  label {
+  display: block;
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  padding-bottom: 0.35rem;
+}
+
+.contact-us-section
+  .contact-us
+  .write-us-contact
+  form
+  .write-us-form-group
+  .write-us-form-control
+  input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 2px solid #d8d8d8;
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.contact-us-section
+  .contact-us
+  .write-us-contact
+  form
+  .write-us-form-group
+  .write-us-form-control
+  textarea {
+  min-width: 100%;
+  min-height: 25rem;
+  padding: 0.8rem 1rem;
+  border: 2px solid #d8d8d8;
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.contact-us-section .contact-us .write-us-contact form .send-btn button {
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  display: block;
+  width: 15rem;
+  margin: auto;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: #fafafa;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1188px) {
+  .contact-us-section .contact .contact-map iframe {
+    width: 50rem;
+  }
+}
+
+@media (max-width: 1040px) {
+  .contact-us-section .contact .contact-map iframe {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 935px) {
+  .contact-us-section .contact .contact-map iframe {
+    width: 35rem;
+  }
+}
+
+@media (max-width: 849px) {
+  .contact-us-section .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-us-section .contact .contact-map {
+    width: 100%;
+    margin-top: 2.5rem;
+  }
+
+  .contact-us-section .contact .contact-map iframe {
+    width: 100%;
+  }
+}
+
+@media (max-width: 660px) {
+  .contact-us-section .contact-us {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-us-section .contact-us .write-us-contact form .write-us-form-group {
+    flex-direction: column;
+  }
+
+  .contact-us-section
+    .contact-us
+    .write-us-contact
+    form
+    .write-us-form-group
+    .write-us-form-control:last-child {
+    margin-left: 0rem;
+  }
+}

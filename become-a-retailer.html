@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale = 1.0, 
+maximum-scale=1.0, user-scalable=no"
+    />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="./Images/favicon-masal.png"
+      type="image/gif"
+      sizes="32x32"
+    />
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/6255250c8f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./CSS/become-a-retailer.css" />
+
+    <title>MİSSNOTRA - Bayimiz Ol</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="overlay has-fade"></div>
+      <div class="container">
+        <nav class="main-header">
+          <div class="brand-logo">
+            <a href="/"><img src="image/logo2.png" alt="MİSSNOTRA" /></a>
+          </div>
+          <div class="toggler-header hide-for-desktop">
+            <a id="btn-hamburger" href="#" class="header-hamburger open">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+
+          <div class="registertion-btns">
+            <div class="searchContainer">
+              <input
+                class="searchBox"
+                type="search"
+                name="search"
+                placeholder="Search"
+              />
+              <div class="search-btn">
+                <i class="fa fa-search searchIcon"></i>
+              </div>
+            </div>            
+          </div>
+        </nav>
+      </div>
+      <div class="sub-header">
+        <div class="sub-menu container">
+          <ul>
+            <li class="current-page">
+                <a href="/">Home</a>
+            </li>                       
+            <li>
+                <a href="./contact-us.html">İletişime Geç</a>
+            </li>
+            <li>
+                <a href="./about-us.html">Hakkımızda</a>
+            </li>                             
+            <li>
+                <a href="./become-a-retailer.html">Bayimiz Ol</a>
+            </li>
+            <li>
+                <a href="./where-to-buy.html">Satış Mağazası</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header-mobile-menu has-fade">
+        <a href="/">Home</a>        
+        <a href="./contact-us.html">İletişime geç</a>
+        <a href="./about-us.html">Hakkımızda</a>        
+        <a href="./become-a-retailer.html">Bayimiz Ol</a>
+        <a href="./where-to-buy.html">Satış Mağazası</a>
+
+        <div class="searchContainer">
+          <input
+            class="searchBox"
+            type="search"
+            name="search"
+            placeholder="Search"
+          />
+          <div class="search-btn">
+            <i class="fa fa-search searchIcon"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Navigation-Display -->
+    <section class="navigation-display">
+      <div class="container">
+        <div class="navigation-display-content">
+          <ul class="navigation-breadcrumbs">
+            <li><a href="/">Home</a></li>
+            <li>
+              <span><i class="fas fa-long-arrow-alt-right"></i></span>
+            </li>
+            <li>Bayimiz Ol</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="Retailer-page">
+        <h2>Bayimiz Ol</h2>
+      </div>
+    </div>
+
+    <!-- Retailer Registration -->
+    <section class="retailer-registration-section">
+      <div class="container">
+        <div class="retailer-registration">
+          <form action="">
+            <div class="retailer-registration-form-group">
+              <div class="retailer-registration-form-control">
+                <label for="nameofcontact">Adı Soyadı</label>
+                <input
+                  type="text"
+                  name="nameofcontact"
+                  id="nameofcontact"
+                  required
+                />
+              </div>
+              <div class="retailer-registration-form-control">
+                <label for="businessname">İşyeri Adı</label>
+                <input
+                  type="text"
+                  name="businessname"
+                  id="businessname"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="retailer-registration-form-group">
+              <div class="retailer-registration-form-control">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="retailer-registration-form-control">
+                <label for="businessphonenumber">Telefon Numarası</label>
+                <input
+                  type="text"
+                  name="businessphonenumber"
+                  id="businessphonenumber"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="retailer-registration-form-group">
+              <div class="retailer-registration-form-control">
+                <label for="businessaddress">İşyeri Adresi</label>
+                <input
+                  type="text"
+                  name="businessaddress"
+                  id="businessaddress"
+                  required
+                />
+              </div>
+              <div class="retailer-registration-form-control">
+                <label for="businessregistrationnumber"
+                  >Vergi Numarası</label
+                >
+                <input
+                  type="text"
+                  name="businessregistrationnumber"
+                  id="businessregistrationnumber"
+                  required
+                />
+              </div>
+            </div>
+            <div class="retailer-registration-form-group">
+              <div class="retailer-registration-form-control">
+                <label for="city">Şehir</label>
+                <input type="text" name="city" id="city" required />
+              </div>
+              <div class="retailer-registration-form-control">
+                <label for="postcode">Posta Kodu</label>
+                <input type="text" name="postcode" id="postcode" required />
+              </div>
+            </div>
+
+            <div class="retailer-registration-form-group">
+              <div class="retailer-registration-form-control">
+                <label for="website">Website</label>
+                <input type="url" name="website" id="website" required />
+              </div>
+              <div class="retailer-registration-form-control">
+                <label for="facebook">Facebook</label>
+                <input type="url" name="facebook" id="facebook" required />
+              </div>
+            </div>
+
+            <div class="retailer-registration-form-group">
+              <div
+                style="margin-left: 0"
+                class="retailer-registration-form-control"
+              >
+                <label for="instagram">Instagram</label>
+                <input type="url" name="instagram" id="instagram" required />
+              </div>
+            </div>
+
+            <div class="retailer-register-btn">
+              <button type="submit">Bayimiz Ol</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="container">
+          <div class="footer-parent">
+            <div class="footer-item-2">
+              <div class="footer-menu-heading">
+                <h2>Customer Care</h2>
+              </div>
+              <div class="footer-menu-links">
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Become a Retailer</a></li>
+                  <li><a href="#">Where to Buy</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer-item-2">
+              <div class="footer-menu-heading">
+                <h2>Customer Care</h2>
+              </div>
+              <div class="footer-menu-links">
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Become a Retailer</a></li>
+                  <li><a href="#">Where to Buy</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer-item-2 mrg-top-mob">
+              <div class="footer-menu-heading">
+                <h2>Featured</h2>
+              </div>
+              <div class="footer-menu-links">
+                <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="#">Collection</a></li>
+                  <li><a href="#">Product</a></li>
+                  <li><a href="#">Gallery</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer-item-1">
+              <div class="footer-brand-logo">
+                <img src="image/logo2.png" alt="MİSSNOTRA" />
+              </div>
+              <div class="footer-social-media">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copright-section">
+        <div class="container">
+          <p>© 2024 MİSSNOTRA All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Custom-JS -->
+    <script src="./JS/script.js"></script>
+
+    <script>
+      $(window).on('load', function () {
+        setTimeout(() => {
+          document.querySelector('.loader-container').style.display = 'none';
+          document.querySelector('body').style.overflowY = 'visible';
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>

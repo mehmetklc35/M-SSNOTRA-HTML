@@ -1,0 +1,189 @@
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navigation-display {
+  margin: 1.5rem 0rem;
+}
+
+.navigation-display .navigation-display-content .navigation-breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+
+.navigation-display
+  .navigation-display-content
+  .navigation-breadcrumbs
+  li:not(:first-child) {
+  margin-left: 1.2rem;
+}
+
+.navigation-display .navigation-display-content .navigation-breadcrumbs li a {
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  color: #282828;
+}
+
+.navigation-display
+  .navigation-display-content
+  .navigation-breadcrumbs
+  li
+  a:hover {
+  text-decoration: underline;
+}
+
+.navigation-display .navigation-display-content .navigation-breadcrumbs li {
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  color: #777;
+}
+
+.Retailer-page h2 {
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.85rem 2rem;
+  text-align: center;
+}
+
+.retailer-registration-section {
+  margin: 2.5rem 0rem;
+  padding: 0 2rem;
+}
+
+.retailer-registration-section .retailer-registration {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  width: 100%;
+  padding: 3.5rem;
+}
+
+.retailer-registration-section .retailer-registration form {
+  width: 100rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.retailer-registration-section
+  .retailer-registration
+  form
+  .retailer-registration-form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.retailer-registration-section
+  .retailer-registration
+  form
+  .retailer-registration-form-group
+  .retailer-registration-form-control {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.retailer-registration-section
+  .retailer-registration
+  form
+  .retailer-registration-form-group
+  .retailer-registration-form-control:last-child {
+  margin-left: 2.5rem;
+}
+
+.retailer-registration-section
+  .retailer-registration
+  form
+  .retailer-registration-form-group
+  .retailer-registration-form-control
+  label {
+  display: block;
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  padding-bottom: 0.35rem;
+}
+
+.retailer-registration-section
+  .retailer-registration
+  form
+  .retailer-registration-form-group
+  .retailer-registration-form-control
+  input {
+  width: 100%;
+  padding: 0.8rem 0.4rem;
+  border: 2px solid #d8d8d8;
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.retailer-registration-section
+  .retailer-registration
+  form
+  .retailer-registration-form-group
+  .retailer-registration-form-control
+  select {
+  width: 100%;
+  padding: 0.8rem 0.4rem;
+  border: 2px solid #d8d8d8;
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.retailer-registration-section
+  .retailer-registration
+  form
+  .retailer-register-btn
+  button {
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  display: block;
+  width: 22rem;
+  margin: 2.5rem auto 0rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: #fafafa;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 660px) {
+  .retailer-registration-section .retailer-registration {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .retailer-registration-section
+    .retailer-registration
+    form
+    .retailer-registration-form-group {
+    flex-direction: column;
+  }
+
+  .retailer-registration-section
+    .retailer-registration
+    form
+    .retailer-registration-form-group
+    .retailer-registration-form-control:last-child {
+    margin-left: 0rem;
+  }
+}

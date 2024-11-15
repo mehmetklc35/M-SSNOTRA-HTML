@@ -1,0 +1,411 @@
+/* ---------------Product Page--------------- */
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Product-Navigation-Display */
+.navigation-product {
+  margin: 1.5rem 0rem;
+}
+
+.navigation-product
+  .navigation-product-content
+  .navigation-product-breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+
+.navigation-product
+  .navigation-product-content
+  .navigation-product-breadcrumbs
+  li:not(:first-child) {
+  margin-left: 1.2rem;
+}
+
+.navigation-product
+  .navigation-product-content
+  .navigation-product-breadcrumbs
+  li
+  a {
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  color: #282828;
+}
+
+.navigation-product
+  .navigation-product-content
+  .navigation-product-breadcrumbs
+  li
+  a:hover {
+  text-decoration: underline;
+}
+
+.navigation-product
+  .navigation-product-content
+  .navigation-product-breadcrumbs
+  li {
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  color: #777;
+}
+
+/* Product */
+.product-section {
+  margin: 5rem 0rem;
+}
+
+.product-section .product {
+  max-width: 98%;
+  padding: 3.5rem 1.5rem;
+  margin: 0 auto;
+  background: #fafafa;
+  border: 1.5px solid #d8d8d8;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1.5rem;
+  /* align-items: center; */
+}
+
+/* .product-section .product .product-images .main-img {
+} */
+
+.product-section .product .product-images .main-img .pro-img {
+  display: block;
+  height: 60rem;
+  border-radius: 0.5rem;
+}
+
+.product-section .product .product-images .main-img img {
+  width: 45rem;
+}
+
+.product-section .product .product-images .thumb-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.product-section .product .product-images .thumb-img .box {
+  display: inline-block;
+  margin: 0.2rem;
+  cursor: pointer;
+}
+
+.product-section .product .product-images .thumb-img .box img {
+  width: 8rem;
+  height: 10rem;
+}
+
+.product-section .product .product-content {
+  padding: 0rem 1.5rem;
+}
+
+.product-section .product .product-content h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  color: #282828;
+}
+
+.product-section .product .product-content .product-description {
+  padding-bottom: 1.5rem;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #282828;
+}
+
+.product-section .product .product-content .product-description ul {
+  padding-top: 1.5rem;
+}
+
+.product-section .product .product-content .product-retailer-btn {
+  background-color: #282828;
+  color: #fafafa;
+  width: 100%;
+  text-align: center;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.product-section .product .product-content .product-store-btn {
+  background-color: #282828;
+  color: #fafafa;
+  width: 100%;
+  text-align: center;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.product-section .product .product-content .product-retailer-btn a,
+.product-section .product .product-content .product-store-btn a {
+  color: #fafafa;
+}
+
+.product-social-links {
+  width: 100%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.product-social-links a {
+  color: #282828;
+}
+
+.product-social-links a:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.product-social-links a i {
+  font-size: 2.5rem;
+}
+
+.main-img {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
+
+/* You-May-Like-Section */
+.yml-section {
+  margin: 5rem 0;
+}
+
+.yml-section h2 {
+  font-size: 4.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem 0rem 4rem 0rem;
+}
+
+.yml-section .yml-slider {
+  width: 98%;
+  height: 45rem;
+  position: relative;
+  margin: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 0 2rem;
+}
+
+.yml-section .yml-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.yml-section .yml-slider .yml-slide {
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: 0.3s left ease-in-out;
+}
+
+.yml-section .yml-slider .yml-item {
+  margin-right: 1.5rem;
+  width: 32rem;
+  height: 40rem;
+}
+
+.yml-section .yml-slider .yml-item:last-child {
+  margin-right: 0;
+}
+
+.yml-section .yml-slider .yml-item .yml-product-card {
+  width: 32rem;
+  height: 40rem;
+  padding: 1.5rem;
+  background: white;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  /* box-shadow: 0 0.7rem 1rem rgba(0, 0, 0, 0.5); */
+  border: 0.2rem solid #666;
+  cursor: pointer;
+  /* margin-top: 5rem; */
+}
+
+.yml-section .yml-slider .yml-item .yml-product-card:hover {
+  transform: translateY(2rem);
+}
+
+.yml-section .yml-slider .yml-item .yml-product-card:hover:before {
+  opacity: 1;
+}
+
+.yml-section .yml-slider .yml-item .yml-product-card:hover .yml-product-info {
+  opacity: 1;
+  transform: translateY(0rem);
+}
+.yml-section .yml-slider .yml-item .yml-product-card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+.yml-section .yml-slider .yml-item .yml-product-card img {
+  width: 96%;
+  height: 96%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+.yml-section .yml-slider .yml-item .yml-product-card .yml-product-info {
+  position: relative;
+  z-index: 3;
+  color: #fafafa;
+  opacity: 0;
+  transform: translateY(3rem);
+  transition: 0.5s;
+}
+.yml-section .yml-slider .yml-item .yml-product-card .yml-product-info h1 {
+  font-size: 2.4rem;
+  font-family: 'Nunito', sans-serif;
+  margin: 0rem;
+}
+.yml-section .yml-slider .yml-item .yml-product-card .yml-product-info p {
+  letter-spacing: 0.05rem;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+.yml-section .yml-slider .yml-item .yml-product-card .yml-product-info button {
+  padding: 0.8rem 1.5rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  background: #fafafa;
+  color: #282828;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: inherit;
+  transition: 300ms ease;
+}
+.yml-section
+  .yml-slider
+  .yml-item
+  .yml-product-card
+  .yml-product-info
+  button:hover {
+  background: #003392;
+  color: #fafafa;
+}
+
+.ctrl {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.ctrl-btn {
+  padding: 20px 20px;
+  min-width: 50px;
+  background: #fafafa;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  border: none;
+  font-size: 1.7rem;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 37%;
+  z-index: 10;
+}
+
+.ctrl-btn.pro-prev {
+  left: 0;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+
+.ctrl-btn.pro-next {
+  right: 0;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 920px) {
+  .product-section .product .product-images .main-img .pro-img {
+    height: 55rem;
+  }
+}
+
+@media (max-width: 895px) {
+  .product-section .product {
+    grid-template-columns: 1fr;
+    width: 70rem;
+    max-width: 100%;
+  }
+
+  .product-section .product .product-images .main-img .pro-img {
+    height: 50rem;
+  }
+
+  .product-section .product .product-images .thumb-img {
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+  }
+
+  .product-section .product .product-content {
+    margin-top: 2.5rem;
+    padding: 0rem 0.5rem;
+  }
+
+  .product-section .product .product-content h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 535px) {
+  .main-img {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-section .product .product-images .thumb-img {
+    justify-content: center;
+    flex-direction: row;
+    margin: 1.5rem auto 0rem auto;
+  }
+
+  .product-section .product .product-images .main-img .pro-img {
+    height: 40rem;
+    width: 30rem !important;
+  }
+
+  .ctrl-btn {
+    display: none;
+  }
+}

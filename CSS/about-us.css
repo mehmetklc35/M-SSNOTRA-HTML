@@ -1,0 +1,94 @@
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navigation-display {
+  margin: 1.5rem 0rem;
+}
+
+.navigation-display .navigation-display-content .navigation-breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+
+.navigation-display
+  .navigation-display-content
+  .navigation-breadcrumbs
+  li:not(:first-child) {
+  margin-left: 1.2rem;
+}
+
+.navigation-display .navigation-display-content .navigation-breadcrumbs li a {
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  color: #282828;
+}
+
+.navigation-display
+  .navigation-display-content
+  .navigation-breadcrumbs
+  li
+  a:hover {
+  text-decoration: underline;
+}
+
+.navigation-display .navigation-display-content .navigation-breadcrumbs li {
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  color: #777;
+}
+
+.about-page h2 {
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.85rem 2rem;
+  text-align: center;
+}
+
+.about-us-section {
+  padding: 0 2rem;
+}
+
+.about-us-section .about-us {
+  max-width: 100%;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  padding: 3.5rem 5rem;
+}
+
+.about-us-section .about-us .about-us-type {
+  font-size: 1.8rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.about-us-section .about-us .about-us-description {
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+.about-us-section .about-us .about-us-description span {
+  display: block;
+  padding-top: 1.5rem;
+}
+
+@media (max-width: 500px) {
+  .about-us-section .about-us {
+    margin: 0 auto;
+    padding: 2.5rem;
+    text-align: justify;
+  }
+}
